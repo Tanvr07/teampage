@@ -9,12 +9,10 @@ var sticky = header.offsetLeft;
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
- /* if (window.pageYOffset > sticky) {*/
-    header.classList.add("sticky");
-/*  } else {
-    header.classList.remove("sticky");
-  }*/
+
+  header.classList.add("sticky");
 }
+  
 
 $(document).ready(function(){
   // Add smooth scrolling to all links
@@ -40,3 +38,7 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+
+$("img.lazy").lazyload();
